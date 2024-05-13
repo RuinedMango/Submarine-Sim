@@ -21,13 +21,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.community.netcode.transport.steamnetworkingsockets": {
-      "version": "https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.steamnetworkingsockets",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "8eab2c9713f7cbb056200e7eba6d4b4b5a19fe7f"
-    },
     "com.rlabrecque.steamworks.net": {
       "version": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net",
       "depth": 0,
@@ -427,16 +420,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.netcode.gameobjects": {
-      "version": "1.8.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.nuget.mono-cecil": "1.10.1",
-        "com.unity.transport": "1.4.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
       "depth": 1,
@@ -446,7 +429,7 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

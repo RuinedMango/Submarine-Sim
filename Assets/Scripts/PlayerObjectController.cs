@@ -1,13 +1,13 @@
+using Mirror;
 using Steamworks;
-using Unity.Collections;
-using Unity.Netcode;
 
 public class PlayerObjectController : NetworkBehaviour
 {
-    public NetworkVariable<int> ConnectionID;
-    public NetworkVariable<int> PlayerIdNumber;
-    public NetworkVariable<ulong> PlayerSteamID;
-    public NetworkVariable<FixedString512Bytes> PlayerName;
+    [SyncVar] public int ConnectionID;
+    [SyncVar] public int PlayerID;
+    [SyncVar] public ulong PlayerSteamID;
+    [SyncVar(hook = nameof(PlayerNameUpdate))] public string PlayerName;
+    [SyncVar(hook = nameof(PlayerReadyUpdate))] public bool Ready;
 
     private CustomNetworkManager manager;
 
@@ -19,50 +19,71 @@ public class PlayerObjectController : NetworkBehaviour
             {
                 return manager;
             }
-            return CustomNetworkManager.Singleton;
+            return manager = CustomNetworkManager.singleton as CustomNetworkManager;
         }
     }
 
-    public override void OnNetworkSpawn()
+    public override void OnStartAuthority()
     {
-        SetPlayerNameRpc(SteamFriends.GetPersonaName().ToString());
+        CmdSetPlayerName(SteamFriends.GetPersonaName().ToString());
         gameObject.name = "LocalGamePlayer";
         LobbyController.instance.FindLocalPlayer();
         LobbyController.instance.UpdateLobbyName();
     }
 
-    public void OnStartClient()
+    public override void OnStartClient()
     {
         Manager.GamePlayers.Add(this);
         LobbyController.instance.UpdateLobbyName();
         LobbyController.instance.UpdatePlayerList();
     }
 
-    private void OnStopClient(ulong stuff)
+    public override void OnStopClient()
     {
         Manager.GamePlayers.Remove(this);
         LobbyController.instance.UpdatePlayerList();
     }
 
-    [Rpc(SendTo.Server)]
-    public void SetPlayerNameRpc(string name)
+    [Command]
+    private void CmdSetPlayerName(string PlayeName)
     {
-        this.PlayerNameUpdate(this.PlayerName.Value.ToString(), name);
+        this.PlayerNameUpdate(this.PlayerName, PlayeName);
+
     }
 
-    private void Start()
+    private void PlayerReadyUpdate(bool oldValue, bool newValue)
     {
-        NetworkManager.Singleton.OnClientDisconnectCallback += OnStopClient;
-        PlayerName.OnValueChanged += PlayerNameUpdate;
-    }
-
-    private void PlayerNameUpdate(FixedString512Bytes previous, FixedString512Bytes current)
-    {
-        if (IsServer)
+        if (isServer)
         {
-            this.PlayerName.Value = current;
+            this.Ready = newValue;
         }
-        if (IsClient)
+        if (isClient)
+        {
+            LobbyController.instance.UpdatePlayerList();
+        }
+    }
+
+    [Command]
+    private void CmdSetPlayerReady()
+    {
+        this.PlayerReadyUpdate(this.Ready, !this.Ready);
+    }
+
+    public void ChangeReady()
+    {
+        if (isOwned)
+        {
+            CmdSetPlayerReady();
+        }
+    }
+
+    public void PlayerNameUpdate(string OldValue, string NewValue)
+    {
+        if (isServer)
+        {
+            this.PlayerName = NewValue;
+        }
+        if (isClient)
         {
             LobbyController.instance.UpdatePlayerList();
         }

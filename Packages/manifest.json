@@ -2,7 +2,6 @@
   "dependencies": {
     "com.adrenak.brw": "1.0.1",
     "com.adrenak.univoice": "3.0.0",
-    "com.community.netcode.transport.steamnetworkingsockets": "https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.steamnetworkingsockets",
     "com.rlabrecque.steamworks.net": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net",
     "com.sinnwrig.fogvolumes": "https://github.com/sinnwrig/URP-Fog-Volumes.git",
     "com.spoiledcat.git": "1.0.27",
@@ -24,7 +23,7 @@
     "com.unity.ml-agents": "2.0.1",
     "com.unity.multiplayer.playmode": "1.0.0",
     "com.unity.multiplayer.tools": "2.1.0",
-    "com.unity.netcode.gameobjects": "1.8.1",
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
     "com.unity.polybrush": "1.1.6",
     "com.unity.probuilder": "6.0.1",
     "com.unity.recorder": "5.1.0",

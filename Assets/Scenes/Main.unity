@@ -418,6 +418,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1705001460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1705001462}
+  - component: {fileID: 1705001461}
+  m_Layer: 0
+  m_Name: ChatroomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1705001461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705001460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15897d55049654c42a65dd2df96ce9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1705001462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705001460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773761177
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +671,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1880735299}
   - component: {fileID: 1880735297}
-  - component: {fileID: 1880735296}
   - component: {fileID: 1880735294}
   m_Layer: 0
   m_Name: PostEffectController
@@ -653,24 +696,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 7bbe35cdf5d69e14abbb03eccedaa5bd, type: 2}
---- !u!114 &1880735296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880735293}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31898a7a07ac44b2ac17a1ef9d941fb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeProfile: {fileID: 11400000, guid: 7bbe35cdf5d69e14abbb03eccedaa5bd, type: 2}
-  isEnabled: 0
-  patternIndex: 2
-  ditherThreshold: 3.53
-  ditherStrength: 1.37
-  ditherScale: 4.67
 --- !u!114 &1880735297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,54 +1007,17 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2020960382}
-  - component: {fileID: 2020960381}
+  - component: {fileID: 2020960386}
   - component: {fileID: 2020960385}
   - component: {fileID: 2020960384}
   - component: {fileID: 2020960383}
   m_Layer: 0
-  m_Name: Network Manager
+  m_Name: NetworkManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2020960381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020960378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593a2fe42fa9d37498c96f9a383b6521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetworkConfig:
-    ProtocolVersion: 0
-    NetworkTransport: {fileID: 2020960384}
-    PlayerPrefab: {fileID: 3624576440184061105, guid: 3597810df709c194aa8351ff597a50e8, type: 3}
-    Prefabs:
-      NetworkPrefabsLists:
-      - {fileID: 11400000, guid: d736d415b0b1f6e408562db94cb050ec, type: 2}
-    TickRate: 30
-    ClientConnectionBufferTimeout: 10
-    ConnectionApproval: 0
-    ConnectionData: 
-    EnableTimeResync: 0
-    TimeResyncInterval: 30
-    EnsureNetworkVariableLengthSafety: 0
-    EnableSceneManagement: 1
-    ForceSamePrefabs: 1
-    RecycleNetworkIds: 1
-    NetworkIdRecycleDelay: 120
-    RpcHashSize: 0
-    LoadSceneTimeOut: 120
-    SpawnTimeout: 10
-    EnableNetworkLogs: 1
-    OldPrefabList: []
-  RunInBackground: 1
-  LogLevel: 1
 --- !u!4 &2020960382
 Transform:
   m_ObjectHideFlags: 0
@@ -1054,11 +1042,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020960378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89fd27d81e7e4940b8434562a81e362, type: 3}
+  m_Script: {fileID: 11500000, guid: 717ccae00fc05914099957cc1b7cb130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLobbyID: 0
-  transport: {fileID: 2020960384}
+  CurrentLobbyID: 0
 --- !u!114 &2020960384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,11 +1055,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020960378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4ccaff1920208429cca7c350560301, type: 3}
+  m_Script: {fileID: 11500000, guid: a10f6d0a9e73e2648a12afd12b4b6c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConnectToSteamID: 0
-  options: []
 --- !u!114 &2020960385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,10 +1067,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020960378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d20ff9490377c5042aa7aa289c798286, type: 3}
+  m_Script: {fileID: 11500000, guid: e6e55fca1f4e4844593a3dd65a3ecb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GamePlayerPrefab: {fileID: 3706114916363784817, guid: a7d540566cfa59d419edb273a1b970ca, type: 3}
+  Channels: 0200000001000000
+  Timeout: 25
+  AllowSteamRelay: 1
+  UseNextGenSteamNetworking: 1
+--- !u!114 &2020960386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020960378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b712fd21bac1c0f45900b10fd37c7c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 1
+  runInBackground: 1
+  headlessStartMode: 1
+  editorAutoStart: 0
+  sendRate: 60
+  autoStartServerBuild: 0
+  autoConnectClientBuild: 0
+  offlineScene: Assets/Scenes/Main.unity
+  onlineScene: Assets/Scenes/Lobby.unity
+  transport: {fileID: 2020960385}
+  networkAddress: localhost
+  maxConnections: 100
+  disconnectInactiveConnections: 0
+  disconnectInactiveTimeout: 60
+  authenticator: {fileID: 0}
+  playerPrefab: {fileID: 3624576440184061105, guid: 3597810df709c194aa8351ff597a50e8, type: 3}
+  autoCreatePlayer: 1
+  playerSpawnMethod: 0
+  spawnPrefabs:
+  - {fileID: 902136296841376286, guid: a7d540566cfa59d419edb273a1b970ca, type: 3}
+  exceptionsDisconnect: 1
+  snapshotSettings:
+    bufferTimeMultiplier: 2
+    bufferLimit: 32
+    catchupNegativeThreshold: -1
+    catchupPositiveThreshold: 1
+    catchupSpeed: 0.019999999552965164
+    slowdownSpeed: 0.03999999910593033
+    driftEmaDuration: 1
+    dynamicAdjustment: 1
+    dynamicAdjustmentTolerance: 1
+    deliveryTimeEmaDuration: 2
+  evaluationMethod: 0
+  evaluationInterval: 3
+  timeInterpolationGui: 0
+  GamePlayerPrefab: {fileID: 3486173932112156356, guid: a7d540566cfa59d419edb273a1b970ca, type: 3}
 --- !u!1 &2037421270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,12 +1170,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1200,3 +1236,4 @@ SceneRoots:
   - {fileID: 1773761180}
   - {fileID: 1470768633}
   - {fileID: 1813064179}
+  - {fileID: 1705001462}

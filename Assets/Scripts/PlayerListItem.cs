@@ -8,10 +8,12 @@ public class PlayerListItem : MonoBehaviour
     public string PlayerName;
     public int ConnectionID;
     public ulong PlayerSteamID;
-    private bool AvatarReceived;
+    private bool AvatarRecieved;
 
     public TextMeshProUGUI PlayerNameText;
     public RawImage PlayerIcon;
+    public TextMeshProUGUI PlayerReadyText;
+    public bool Ready;
 
     protected Callback<AvatarImageLoaded_t> ImageLoaded;
 
@@ -20,10 +22,25 @@ public class PlayerListItem : MonoBehaviour
         ImageLoaded = Callback<AvatarImageLoaded_t>.Create(OnImageLoaded);
     }
 
+    public void ChangeReadyStatus()
+    {
+        if (Ready)
+        {
+            PlayerReadyText.text = "Ready";
+            PlayerReadyText.color = Color.green;
+        }
+        else
+        {
+            PlayerReadyText.text = "Not Ready";
+            PlayerReadyText.color = Color.red;
+        }
+    }
+
     public void SetPlayerValues()
     {
         PlayerNameText.text = PlayerName;
-        if (!AvatarReceived) { GetPlayerIcon(); };
+        ChangeReadyStatus();
+        if (!AvatarRecieved) { GetPlayerIcon(); }
     }
 
     void GetPlayerIcon()
@@ -53,7 +70,6 @@ public class PlayerListItem : MonoBehaviour
         if (isValid)
         {
             byte[] image = new byte[width * height * 4];
-
             isValid = SteamUtils.GetImageRGBA(iImage, image, (int)(width * height * 4));
 
             if (isValid)
@@ -63,7 +79,7 @@ public class PlayerListItem : MonoBehaviour
                 texture.Apply();
             }
         }
-        AvatarReceived = true;
+        AvatarRecieved = true;
         return texture;
     }
 }

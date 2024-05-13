@@ -42,8 +42,8 @@ PlayerSettings:
   m_SplashScreenLogos: []
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
-  defaultScreenWidth: 1920
-  defaultScreenHeight: 1080
+  defaultScreenWidth: 960
+  defaultScreenHeight: 540
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
@@ -105,7 +105,7 @@ PlayerSettings:
   xboxEnableKinectAutoTracking: 0
   xboxEnableFitness: 0
   visibleInBackground: 1
-  allowFullscreenSwitch: 1
+  allowFullscreenSwitch: 0
   fullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
@@ -144,6 +144,8 @@ PlayerSettings:
   preloadedAssets:
   - {fileID: 0}
   - {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -661,7 +663,7 @@ PlayerSettings:
   webWasm2023: 0
   scriptingDefineSymbols:
     Server: PROBUILDER_EXPERIMENTAL_FEATURES
-    Standalone: PROBUILDER_EXPERIMENTAL_FEATURES;STEAMWORKS_NET
+    Standalone: PROBUILDER_EXPERIMENTAL_FEATURES;STEAMWORKS_NET;MIRROR;MIRROR_79_OR_NEWER;MIRROR_81_OR_NEWER;MIRROR_82_OR_NEWER;MIRROR_83_OR_NEWER;MIRROR_84_OR_NEWER;MIRROR_85_OR_NEWER;MIRROR_86_OR_NEWER;MIRROR_89_OR_NEWER;UNIVOICE_MIRROR
     WebGL: PROBUILDER_EXPERIMENTAL_FEATURES
     Windows Store Apps: PROBUILDER_EXPERIMENTAL_FEATURES
   additionalCompilerArguments: {}
