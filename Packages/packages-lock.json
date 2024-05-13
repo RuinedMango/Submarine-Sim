@@ -37,13 +37,6 @@
       },
       "hash": "94cacfe6591721c708dcb980a0b476c061ee9744"
     },
-    "com.spoiledcat.git": {
-      "version": "1.0.27",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.spoiledcat.com"
-    },
     "com.unity.2d.animation": {
       "version": "10.1.1",
       "depth": 1,

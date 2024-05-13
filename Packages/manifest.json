@@ -4,7 +4,6 @@
     "com.adrenak.univoice": "3.0.0",
     "com.rlabrecque.steamworks.net": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net",
     "com.sinnwrig.fogvolumes": "https://github.com/sinnwrig/URP-Fog-Volumes.git",
-    "com.spoiledcat.git": "1.0.27",
     "com.unity.ai.navigation": "2.0.0",
     "com.unity.cinemachine": "3.1.0",
     "com.unity.collab-proxy": "2.3.1",
@@ -76,13 +75,6 @@
     "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
-    {
-      "name": "spoiledcat",
-      "url": "https://registry.spoiledcat.com",
-      "scopes": [
-        "com.spoiledcat"
-      ]
-    },
     {
       "name": "UniVoice",
       "url": "https://registry.npmjs.org",

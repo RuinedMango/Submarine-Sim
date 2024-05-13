@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1349
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Project
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 77
+  controlID: 21
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,14 +120,14 @@ MonoBehaviour:
     y: 0
     width: 780
     height: 1299
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 51, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -173,15 +173,15 @@ MonoBehaviour:
     y: 783
     width: 2660
     height: 516
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 23}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 150}
   m_MaxSize: {x: 16192, y: 24288}
   vertical: 1
-  controlID: 78
+  controlID: 22
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 79
+  controlID: 23
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -351,8 +351,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Git for Unity\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2660
-    y: 73
+    x: 2661
+    y: 19
     width: 779
     height: 1278
   m_SerializedDataModeController:
@@ -366,14 +366,14 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
-  progressMessageClearTime: 440.86890470000003
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
-  currentBranchAndRemoteHasUpdate: 1
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  currentBranchAndRemoteHasUpdate: 0
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -521,260 +521,11 @@ MonoBehaviour:
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - 9c53962885c2c4f449125a979d6ad240
-        - 1a59b89ed1759e34a933afc99f560683
-        - 2e1e727faae6ddc459e64e04ba93e8a5
-        - 5bc392ef1f4545742b089dfb8e6d5608
-        - 000a15220f03c4b4eae4dfb95253bbd0
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes\Main.unity
-          label: Main.unity
-          level: 2
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\Main.unity
-            fullPath: D:\Unity Projects\Submarine Sim\Assets\Scenes\Main.unity
-            projectPath: Assets\Scenes\Main.unity
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-          label: URP-PSX Render Pipeline Asset_Renderer.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-            fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline
-              Asset_Renderer.asset
-            projectPath: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets\URP-PSX Render Pipeline Global Settings.asset
-          label: URP-PSX Render Pipeline Global Settings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\URP-PSX Render Pipeline Global Settings.asset
-            fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline
-              Global Settings.asset
-            projectPath: Assets\URP-PSX Render Pipeline Global Settings.asset
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       folders:
-        keys:
-        - .plastic
-        - Assets
-        - Assets\Scenes
-        - Assets\Scripts
-        - Assets\Scripts\Dithering
-        - UserSettings
-        - UserSettings\Layouts
-        values:
-        - path: .plastic
-          label: .plastic
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts\Dithering
-          label: Dithering
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -803,493 +554,27 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .plastic
-        label: .plastic
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: .plastic\plastic.changes
-        label: plastic.changes
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .plastic\plastic.changes
-          fullPath: D:\Unity Projects\Submarine Sim\.plastic\plastic.changes
-          projectPath: .plastic\plastic.changes
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: .plastic\plastic.wktree
-        label: plastic.wktree
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .plastic\plastic.wktree
-          fullPath: D:\Unity Projects\Submarine Sim\.plastic\plastic.wktree
-          projectPath: .plastic\plastic.wktree
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes\Main.unity
-        label: Main.unity
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes\Main.unity
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scenes\Main.unity
-          projectPath: Assets\Scenes\Main.unity
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\Scripts
-        label: Scripts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scripts\Dithering.meta
-        label: Dithering.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering.meta
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering.meta
-          projectPath: Assets\Scripts\Dithering.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Scripts\Dithering
-        label: Dithering
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scripts\Dithering\Dithering.cs
-        label: Dithering.cs
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering\Dithering.cs
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\Dithering.cs
-          projectPath: Assets\Scripts\Dithering\Dithering.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Scripts\Dithering\Dithering.cs.meta
-        label: Dithering.cs.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering\Dithering.cs.meta
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\Dithering.cs.meta
-          projectPath: Assets\Scripts\Dithering\Dithering.cs.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Scripts\Dithering\DitheringController.cs
-        label: DitheringController.cs
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering\DitheringController.cs
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringController.cs
-          projectPath: Assets\Scripts\Dithering\DitheringController.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Scripts\Dithering\DitheringController.cs.meta
-        label: DitheringController.cs.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering\DitheringController.cs.meta
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringController.cs.meta
-          projectPath: Assets\Scripts\Dithering\DitheringController.cs.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Scripts\Dithering\DitheringRenderFeature.cs
-        label: DitheringRenderFeature.cs
-        level: 3
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering\DitheringRenderFeature.cs
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringRenderFeature.cs
-          projectPath: Assets\Scripts\Dithering\DitheringRenderFeature.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-        label: DitheringRenderFeature.cs.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-          projectPath: Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 5
-      - path: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-        label: URP-PSX Render Pipeline Asset_Renderer.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline
-            Asset_Renderer.asset
-          projectPath: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets\URP-PSX Render Pipeline Global Settings.asset
-        label: URP-PSX Render Pipeline Global Settings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\URP-PSX Render Pipeline Global Settings.asset
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline
-            Global Settings.asset
-          projectPath: Assets\URP-PSX Render Pipeline Global Settings.asset
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: New Text Document.txt
-        label: New Text Document.txt
-        level: 0
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: New Text Document.txt
-          fullPath: D:\Unity Projects\Submarine Sim\New Text Document.txt
-          projectPath: New Text Document.txt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-6000.dwlt
-        label: default-6000.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-6000.dwlt
-          fullPath: D:\Unity Projects\Submarine Sim\UserSettings\Layouts\default-6000.dwlt
-          projectPath: UserSettings\Layouts\default-6000.dwlt
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
-        path: Assets\URP-PSX Render Pipeline Global Settings.asset
-        label: URP-PSX Render Pipeline Global Settings.asset
-        level: 1
+        path: 
+        label: 
+        level: 0
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-        treeIsCheckable: 1
+        treeIsCheckable: 0
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\URP-PSX Render Pipeline Global Settings.asset
-          fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline
-            Global Settings.asset
-          projectPath: Assets\URP-PSX Render Pipeline Global Settings.asset
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
           indexStatus: 0
-          workTreeStatus: 3
-    gitStatusEntries:
-    - path: .plastic\plastic.changes
-      fullPath: D:\Unity Projects\Submarine Sim\.plastic\plastic.changes
-      projectPath: .plastic\plastic.changes
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: .plastic\plastic.wktree
-      fullPath: D:\Unity Projects\Submarine Sim\.plastic\plastic.wktree
-      projectPath: .plastic\plastic.wktree
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scenes\Main.unity
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scenes\Main.unity
-      projectPath: Assets\Scenes\Main.unity
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\Scripts\Dithering.meta
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering.meta
-      projectPath: Assets\Scripts\Dithering.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Scripts\Dithering\Dithering.cs
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\Dithering.cs
-      projectPath: Assets\Scripts\Dithering\Dithering.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Scripts\Dithering\Dithering.cs.meta
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\Dithering.cs.meta
-      projectPath: Assets\Scripts\Dithering\Dithering.cs.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Scripts\Dithering\DitheringController.cs
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringController.cs
-      projectPath: Assets\Scripts\Dithering\DitheringController.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Scripts\Dithering\DitheringController.cs.meta
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringController.cs.meta
-      projectPath: Assets\Scripts\Dithering\DitheringController.cs.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Scripts\Dithering\DitheringRenderFeature.cs
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringRenderFeature.cs
-      projectPath: Assets\Scripts\Dithering\DitheringRenderFeature.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-      projectPath: Assets\Scripts\Dithering\DitheringRenderFeature.cs.meta
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 5
-    - path: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-      projectPath: Assets\URP-PSX Render Pipeline Asset_Renderer.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets\URP-PSX Render Pipeline Global Settings.asset
-      fullPath: D:\Unity Projects\Submarine Sim\Assets\URP-PSX Render Pipeline Global
-        Settings.asset
-      projectPath: Assets\URP-PSX Render Pipeline Global Settings.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: New Text Document.txt
-      fullPath: D:\Unity Projects\Submarine Sim\New Text Document.txt
-      projectPath: New Text Document.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Layouts\default-6000.dwlt
-      fullPath: D:\Unity Projects\Submarine Sim\UserSettings\Layouts\default-6000.dwlt
-      projectPath: UserSettings\Layouts\default-6000.dwlt
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 14 changed files
+          workTreeStatus: 0
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 1
@@ -22151,7 +21436,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/RuinedMango/Submarine-Sim.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -22164,13 +21449,13 @@ MonoBehaviour:
     m_Tooltip: Url of the origin remote
     m_TextWithWhitespace: "https://github.com/RuinedMango/Submarine-Sim.git\u200B"
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2024-05-10T16:47:42.922-08:00
+    updatedTimeString: 2024-05-12T19:04:22.061-08:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-05-10T16:53:38.461-08:00
+    updatedTimeString: 2024-05-12T19:04:23.728-08:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-05-10T16:53:38.443-08:00
+    updatedTimeString: 2024-05-12T19:01:51.963-08:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -22192,7 +21477,7 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: 
     m_TextWithWhitespace: "Fetch\u200B"
-  repositoryProgressValue: 1
+  repositoryProgressValue: 0
   repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
@@ -22272,7 +21557,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 80416
+  m_LastSelectedObjectID: -11928
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -22367,7 +21652,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 856
+    y: 802
     width: 2659
     height: 495
   m_SerializedDataModeController:
@@ -22392,7 +21677,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/UniVoice
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -22402,16 +21687,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/UniVoice
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity Projects\Submarine Sim
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 960e0100
-    m_LastClickedID: 69270
-    m_ExpandedIDs: 0000000046120100481201004a1201004c1201004e12010050120100521201005412010056120100581201005a1201005c1201005e12010060120100
+    m_SelectedIDs: f2290100
+    m_LastClickedID: 76274
+    m_ExpandedIDs: 000000005e11010060110100621101006411010066110100681101006a1101006c1101006e1101007011010072110100741101007611010078110100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -22440,7 +21725,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046120100481201004a1201004c1201004e12010050120100521201005412010056120100581201005a1201005c1201005e12010060120100
+    m_ExpandedIDs: 000000005e11010060110100621101006411010066110100681101006a1101006c1101006e1101007011010072110100741101007611010078110100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -22519,8 +21804,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2661
-    y: 19
+    x: 2660
+    y: 73
     width: 779
     height: 1278
   m_SerializedDataModeController:
@@ -22588,7 +21873,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d625ffff3434ffffc235ffff643affff923affffe252ffff7054ffff1c59ffff4e59ffffe890ffff7692ffff2697ffff5c97ffffc2afffff12beffffa0bfffff4cc4ffff7ec4ffffdee9ffffeef5ffff04f7ffff1af7ffffa4fafffffc200100062101001e210100ae260100b8260100d0260100982c0100a22c0100b22c0100bc2c0100
+      m_ExpandedIDs: 2ce0ffff96e1ffff5ee7ffff90e7ffffd6efffff68faffff6afafffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -23348,7 +22633,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 963.5298, y: 70.0156, z: -113.645485}
     speed: 2
-    m_Value: {x: 997.3567, y: 742.66174, z: -55.69913}
+    m_Value: {x: 963.5298, y: 70.0156, z: -113.645485}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -23400,7 +22685,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 544.75793
     speed: 2
-    m_Value: 734.2889
+    m_Value: 544.75793
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -23500,7 +22785,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -23553,7 +22838,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 802
+    y: 856
     width: 2659
     height: 495
   m_SerializedDataModeController:
