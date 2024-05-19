@@ -14,7 +14,7 @@ Material:
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -76,7 +76,7 @@ Material:
     m_Floats:
     - Boolean_193028D2: 1
     - Boolean_3F1A8DAB: 1
-    - Boolean_43476D73: 1
+    - Boolean_43476D73: 0
     - Boolean_7165A49C: 1
     - Boolean_85059BBE: 1
     - Boolean_8BBF99CD: 1
@@ -88,7 +88,7 @@ Material:
     - Vector1_B2CC132F: 13
     - Vector1_B74833F8: 1
     - Vector1_B9994903: 2.45
-    - Vector1_E8746023: 11.83
+    - Vector1_E8746023: 255
     - Vector1_F6C0D59C: 1
     - _AlphaClip: 0
     - _Blend: 0

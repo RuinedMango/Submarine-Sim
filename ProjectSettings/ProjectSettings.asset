@@ -150,6 +150,12 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -781,7 +787,13 @@ PlayerSettings:
   windowsGamepadBackendHint: 0
   cloudProjectId: 9b28b1ce-92f2-4f9f-8f2f-16fa73f68160
   framebufferDepthMemorylessMode: 0
-  qualitySettingsNames: []
+  qualitySettingsNames:
+  - Very Low
+  - Low
+  - Medium
+  - High
+  - Very High
+  - Ultra
   projectName: Submarine Sim
   organizationId: ruinedgames
   cloudEnabled: 0
