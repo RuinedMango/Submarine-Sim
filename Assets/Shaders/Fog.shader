@@ -9,14 +9,14 @@ Shader "PostEffect/Fog"
     
     CGINCLUDE
         #include "UnityCG.cginc"
-        #include "./cginc/voronoi.cginc"
+        #include "Assets/Shaders/cginc/voronoi.cginc"
+    
         sampler2D _MainTex;
         sampler2D _CameraDepthTexture;
         
         float _FogDensity;
         float _FogDistance;
         float4 _FogColor;
-        float4 _AmbientColor;
         
         float _FogNear;
         float _FogFar;
@@ -85,7 +85,7 @@ Shader "PostEffect/Fog"
             //float l = saturate((d - _FogNear) / (_FogFar - _FogNear) / clamp(i.worldPos.y / _FogAltScale + 1, 1, _FogThinning));
             
             //background and color 
-            float4 ambientColor = _AmbientColor; //float4(0.1,0.1,0.1,0.1);
+            float4 ambientColor = float4(0.1,0.1,0.1,0.1);
             float4 background = tex2D(_MainTex, i.uv);
             
             //depth handling

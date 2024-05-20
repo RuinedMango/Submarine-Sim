@@ -32,7 +32,6 @@ public class PlayerController : NetworkBehaviour
         Move();
     }
 
-    [Command]
     void Move()
     {
         Vector3 currentVelocity = rb.linearVelocity;
@@ -49,7 +48,6 @@ public class PlayerController : NetworkBehaviour
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
     }
 
-    [Command]
     void Jump()
     {
         Vector3 jumpForces = Vector3.zero;
@@ -77,7 +75,9 @@ public class PlayerController : NetworkBehaviour
         SceneManager.activeSceneChanged += OnSceneChanged;
         if (!isOwned)
         {
+            gameObject.GetComponent<PlayerInput>().enabled = false;
             camHolder.SetActive(false);
+            gameObject.GetComponent<PlayerController>().enabled = false;
         }
     }
 
